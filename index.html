@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/style.min.css">
+    <script src="./js/main.js" type="module"></script>
+    <title>Wiki Me</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="offscreen">Wiki Me App A Wikipedia search engine</h1>
+      <section class="searchEntry">
+        <h2 class="offscreen">Search Term Entry</h2>
+        <div class="logo" aria-hidden="true">
+          <span class="blue">W</span>
+          <span class="red">i</span>
+          <span class="yellow">k</span>
+          <span class="blue">i</span>
+          <span class="green">M</span>
+          <span class="red">e</span>
+          <span class="blue">!</span>
+        </div>
+        <form action="" id="searchBar" class="searchBar" role="search">
+          <label for="search" class="offscreen"
+            >Enter a search term or phrase
+          </label>
+          <input id="search" type="text" autocomplete="off" role="searchbox"/>
+          <div
+            id="clear"
+            class="none button clear"
+            role="button"
+            tabindex="0"
+            aria-label="clear search terms"
+          >
+          <i class="fas fa-times"></i>
+          </div>
+          <button
+            id="searchButton"
+            class="button searchButton"
+            type="submit"
+            aria-label="Submit button"
+          >
+          <i class="fas fa-search blue"></i>
+          </button>
+        </form>
+      </section>
+      <section class="results">
+        <h2 class="offscreen">Search results</h2>
+        <div class="statsBar">
+          <div id="stats" class="stats" aria-live="assertive"></div>
+        </div>
+        <div class="searchResults" id="searchResults">
+          <!-- <div class="resultItem">
+            <div class="resultTitle">
+              <a href="">Dachsund</a>
+            </div>
+            <div class="resultContent">
+              <div class="resultImage">
+                <img src="" alt="Dachsund" />
+              </div>
+              <div class="resultText">
+                <p class="resultDescription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <span aria-hidden="true">&lt;&lt;</span>Powered by
+        <a href="https://www.wikipedia.com" target="_blank">Wikipedia</a
+        ><span aria-hidden="true">&gt;&gt;</span>
+      </p>
+    </footer>
+  </body>
+</html>
